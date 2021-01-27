@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Horizon Bank</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image" href="images/bank.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 </head>
 <body>
@@ -17,9 +18,14 @@
             <br>
             <input type="password" class="form-control" placeholder="Password" name="" id="">
             <br>
-            <button class="btn btn-success">Enter</button>
+            <button id="login" class="btn btn-success">Enter</button>
         </div>
     </div>
-   
+   <script>
+       const loginBtn = document.getElementById("login");
+       loginBtn.addEventListener("click",function(){
+           console.log('amake click marse');
+       })
+   </script>
 </body>
 </html>
